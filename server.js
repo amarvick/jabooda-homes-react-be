@@ -78,7 +78,10 @@ var retrieveData = function(db, req, res) {
 
 // Get Careers
 router.get('/getCareerData', (req, res) => {
-    return res.json({
+    console.log(req)
+    console.log('***************************************************************************************************************************************')
+    console.log(res)
+    var data = res.json({
             success: true,
             data: {
                 "_id": {
