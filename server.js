@@ -23,6 +23,8 @@ const sendJobApplication = require('./email/actions/emailForwarding').sendJobApp
 
 const PORT = 3001
 
+console.log('&&&&&&&&&&&& PORT ESTABLISHED &&&&&&&&&&&&&&&&&&&&')
+
 app.use(express.static(__dirname + '/public'))
 app.use(cors())
 app.listen(PORT, () => {
