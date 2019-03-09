@@ -21,7 +21,7 @@ const users = require('./routes/api/users')
 const sendEmailContactForm = require('./email/actions/emailForwarding').sendEmailContactForm
 const sendJobApplication = require('./email/actions/emailForwarding').sendJobApplication
 
-const PORT = process.env.PORT || 3001
+const PORT = 3001
 
 app.use(express.static(__dirname + '/public'))
 app.use(cors())
@@ -72,15 +72,12 @@ var retrieveData = function(db, req, res) {
             return res.json({ success: false, error: err })
         }
 
-        console.log(data)
-
         return res.json({ success: true, data: data })
     })
 }
 
 // Get Careers
 router.get('/getCareerData', (req, res) => {
-    alert('getting data')
     console.log(Careers)
     return retrieveData(Careers, req, res)
 })
