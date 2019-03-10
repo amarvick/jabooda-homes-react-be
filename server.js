@@ -81,30 +81,7 @@ router.get('/getCareerData', (req, res) => {
     console.log(req)
     console.log('***************************************************************************************************************************************')
     console.log(res)
-    var data = res.json({
-            success: true,
-            data: {
-                "_id": {
-                    "$oid": "5c200d53e7179a74879741fb"
-                },
-                "jobtitle": "FRAMER",
-                "description": "",
-                "requirements": [
-                    "Measure, cut and assemble lumber with precision",
-                    "Be able to lift and carry heavy framing lumber, sheets of plywood and other materials",
-                    "Strong analytical and mathematical skills",
-                    "Don't be a noob",
-                    "Be really good at what you do",
-                    "asdf"
-                ],
-                "updatedAt": {
-                    "$date": "2019-02-06T22:04:42.721Z"
-                }
-            }
-    })
-
-    return data
-    // return retrieveData(Careers, req, res)
+    return retrieveData(Careers, req, res)
 })
 
 // Get Projects
