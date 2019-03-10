@@ -19,7 +19,7 @@
     "validator": "^10.11.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "browserslist": [
     ">0.2%",
