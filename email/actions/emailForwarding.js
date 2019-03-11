@@ -41,16 +41,12 @@ function sendEmailContactForm(letter) {
     }
     
     transporter.sendMail(Message, (error, info) => {
-        if (error) {
-            console.log('Error in sending email. See details below...')
+        if (error) {)
             console.log(error)
-            res.send(error)
-            throw error
+            return error
         } else {
-            console.log('Email successfully sent!')
             console.log(info)
-            res.send(info)
-            throw info
+            return info
         }
     })     
 }
