@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 })
 
 // Setting up MongoDB Database
-const dbRoute = require('./config/keys').process.env.mongoURI
+const dbRoute = process.env.mongoURI
 
 // Connect back end code with DB
 mongoose.connect(
