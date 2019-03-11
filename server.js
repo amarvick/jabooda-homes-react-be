@@ -206,7 +206,7 @@ router.post("/createUserData", (req, res) => {
 // User sends an email via the 'Contact Us' page
 app.post('/api/sendEmailform', (req, res) => {
     console.log('Sending...')
-    res.send(sendEmailContactForm(req))
+    res.send(sendEmailContactForm(req.body))
 })
 
 // User submits a job application
