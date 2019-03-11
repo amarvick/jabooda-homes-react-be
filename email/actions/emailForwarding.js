@@ -31,6 +31,7 @@ function newUserRegistration(newUser) {
 // Sending in email via contact form
 function sendEmailContactForm(letter) {
     let transporter = createTransport()
+    console.log(letter)
 
     // Email parameters 
     let Message = {

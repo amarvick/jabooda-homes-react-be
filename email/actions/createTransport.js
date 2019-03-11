@@ -7,7 +7,7 @@ module.exports = function createTransport() {
         port: 25,
         auth: {
             user: 'amarvick94@gmail.com',
-            pass: process.env.emailPassword
+            pass: process.env.emailPassword // AM - this works, but make fake password later
         },
         tls: {
             rejectUnauthorized: false
