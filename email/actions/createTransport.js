@@ -7,7 +7,7 @@ module.exports = function createTransport() {
         port: 25,
         auth: {
             user: 'amarvick94@gmail.com',
-            pass: require('../../config/keys').emailPassword
+            pass: process.env.emailPassword
         },
         tls: {
             rejectUnauthorized: false
