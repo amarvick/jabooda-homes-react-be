@@ -41,7 +41,7 @@ function sendEmailContactForm(letter) {
     }
     
     transporter.sendMail(Message, (error, info) => {
-        if (error) {)
+        if (error) {
             console.log(error)
             return error
         } else {
